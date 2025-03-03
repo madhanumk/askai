@@ -4,6 +4,14 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 
 ![Project Overview](screenshot1.png)
 
+## Demo
+
+**Live Demo**: [https://askai-summarizer.vercel.app](https://askai-summarizer.vercel.app)
+
+> **Note**: We use freemium services so the server is sometimes slow. API token limits may be exceeded occasionally, but everything works fine in a local environment. The production version uses DeepSeek model API via NVIDIA for inference.
+
+![Chat Interface](screenshot2.png)
+
 ## Features
 
 - **PDF Upload & Processing**: Upload and analyze PDF documents
@@ -11,8 +19,6 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 - **Web Content to Mind Maps**: Convert web articles and content into visual mind maps
 - **Retrieval-Augmented Generation**: Enhance responses with document-specific knowledge
 - **Responsive Design**: Seamless experience across desktop and mobile devices
-
-![Chat Interface](screenshot2.png)
 
 ## Technology Stack
 
@@ -28,6 +34,10 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 - PostgreSQL for data storage
 - PDF processing libraries
 
+### LLM Options
+- Cloud API: DeepSeek model via NVIDIA (used in demo)
+- Local deployment: Connect to Ollama locally to use LLMs without API requirements
+
 ![PDF Processing](screenshot3.png)
 
 ## Getting Started
@@ -36,6 +46,7 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 - Node.js (v14 or higher)
 - npm or yarn
 - Git
+- Ollama (optional, for local LLM deployment)
 
 ### Installation
 
@@ -115,3 +126,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Django](https://www.djangoproject.com/)
 - [LangChain](https://langchain.readthedocs.io/)
 - [PDF.js](https://mozilla.github.io/pdf.js/)
+- [DeepSeek](https://www.deepseek.com/)
+- [Ollama](https://ollama.ai/)
