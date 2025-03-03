@@ -2,7 +2,6 @@
 
 A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.js that allows users to upload PDFs, chat with their documents, and convert web content into mind maps.
 
-![Project Overview](screenshot1.png)
 
 ## Demo
 
@@ -10,15 +9,14 @@ A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.
 
 > **Note**: We use freemium services so the server is sometimes slow. API token limits may be exceeded occasionally, but everything works fine in a local environment. The production version uses DeepSeek model API via NVIDIA for inference.
 
-![Chat Interface](screenshot2.png)
 
 ## Features
 
 - **PDF Upload & Processing**: Upload and analyze PDF documents
+- **Retrieval-Augmented Generation**: Enhance responses with document-specific knowledge
 - **Interactive Chat**: Engage with your documents through an intuitive chat interface
 - **Web Content to Mind Maps**: Convert web articles and content into visual mind maps
 - **YouTube Summarization**: Generate summaries from YouTube videos (Only available in local deployment)
-- **Retrieval-Augmented Generation**: Enhance responses with document-specific knowledge
 - **Responsive Design**: Seamless experience across desktop and mobile devices
 
 ## Technology Stack
@@ -38,7 +36,6 @@ A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.
 - Cloud API: DeepSeek model via NVIDIA (used in demo)
 - Local deployment: Connect to Ollama locally to use LLMs without API requirements
 
-![PDF Processing](screenshot3.png)
 
 ## Getting Started
 
