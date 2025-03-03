@@ -2,13 +2,11 @@
 
 A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.js that allows users to upload PDFs, chat with their documents, and convert web content into mind maps.
 
-
 ## Demo
 
 **Live Demo**: [https://askai-summarizer.vercel.app](https://askai-summarizer.vercel.app)
 
 > **Note**: We use freemium services so the server is sometimes slow. API token limits may be exceeded occasionally, but everything works fine in a local environment. The production version uses DeepSeek model API via NVIDIA for inference.
-
 
 ## Features
 
@@ -35,7 +33,6 @@ A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.
 ### LLM Options
 - Cloud API: DeepSeek model via NVIDIA (used in demo)
 - Local deployment: Connect to Ollama locally to use LLMs without API requirements
-
 
 ## Getting Started
 
@@ -69,7 +66,7 @@ npm start
 Backend code will be added to this repository soon.
 ```
 
-![Mind Map Feature](screenshot4.png)
+![Mind Map Feature](https://github.com/madhanumk/askai/blob/main/Webpage%20to%20mindmap.png)
 
 ## Usage
 
@@ -79,11 +76,7 @@ Backend code will be added to this repository soon.
 4. **Summarize YouTube Videos**: Enter a YouTube URL to generate a video summary (Only available in local deployment)
 5. **Export Results**: Save conversations and mind maps for future reference
 
-## Project Structure
-
-
-
-![User Dashboard](screenshot5.png)
+![User Dashboard](https://github.com/madhanumk/askai/blob/main/Youtube%20Video%20Summarizer.png)
 
 ## Coming Soon
 
