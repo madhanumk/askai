@@ -1,6 +1,6 @@
 # PDF RAG System
 
-A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django and React that allows users to upload PDFs, chat with their documents, and convert web content into mind maps.
+A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.js that allows users to upload PDFs, chat with their documents, and convert web content into mind maps.
 
 ![Project Overview](screenshot1.png)
 
@@ -17,15 +17,15 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 - **PDF Upload & Processing**: Upload and analyze PDF documents
 - **Interactive Chat**: Engage with your documents through an intuitive chat interface
 - **Web Content to Mind Maps**: Convert web articles and content into visual mind maps
+- **YouTube Summarization**: Generate summaries from YouTube videos (Only available in local deployment)
 - **Retrieval-Augmented Generation**: Enhance responses with document-specific knowledge
 - **Responsive Design**: Seamless experience across desktop and mobile devices
 
 ## Technology Stack
 
 ### Frontend
-- React.js
-- Redux for state management
-- Tailwind CSS for styling
+- Next.js
+- Bootstrap for styling
 - Axios for API communication
 
 ### Backend (Coming Soon)
@@ -52,8 +52,8 @@ A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/pdf-rag-system.git
-cd pdf-rag-system
+git clone https://github.com/madhanumk/askai.git
+cd askai
 ```
 
 2. Install frontend dependencies
@@ -79,24 +79,12 @@ Backend code will be added to this repository soon.
 1. **Upload Documents**: Click the upload button to add your PDFs
 2. **Chat with Documents**: Use the chat interface to ask questions about your documents
 3. **Generate Mind Maps**: Enter a URL to convert web content into visual mind maps
-4. **Export Results**: Save conversations and mind maps for future reference
+4. **Summarize YouTube Videos**: Enter a YouTube URL to generate a video summary (Only available in local deployment)
+5. **Export Results**: Save conversations and mind maps for future reference
 
 ## Project Structure
 
-```
-pdf-rag-system/
-├── frontend/            # React frontend code
-│   ├── public/          # Static files
-│   ├── src/             # Source files
-│   │   ├── components/  # React components
-│   │   ├── pages/       # Page components
-│   │   ├── services/    # API services
-│   │   ├── store/       # Redux store
-│   │   └── utils/       # Utility functions
-│   ├── package.json     # Dependencies
-│   └── README.md        # Frontend specific instructions
-└── README.md            # Main project README
-```
+
 
 ![User Dashboard](screenshot5.png)
 
@@ -122,9 +110,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
 - [Django](https://www.djangoproject.com/)
 - [LangChain](https://langchain.readthedocs.io/)
 - [PDF.js](https://mozilla.github.io/pdf.js/)
 - [DeepSeek](https://www.deepseek.com/)
 - [Ollama](https://ollama.ai/)
+
