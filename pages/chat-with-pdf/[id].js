@@ -3,11 +3,7 @@ import { useEffect, useState,  useRef } from "react";
 import axios from "axios";
 import { Document, Page, pdfjs } from 'react-pdf';
 
-// Configure PDF.js worker source
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+
 
 export default function ChatWithPdf() {
   const router = useRouter();
@@ -21,6 +17,15 @@ export default function ChatWithPdf() {
   const [messages, setMessages] = useState([]); // Store Q&A
   const [question, setQuestion] = useState(""); // User input
   const [loading, setLoading] = useState(false); // Loading state
+
+
+  useEffect(() => {
+    import("pdfjs-dist/build/pdf.worker.min.mjs")
+      .then((worker) => {
+        pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
+      })
+      .catch((err) => console.error("Failed to load PDF worker:", err));
+  }, []);
 
   useEffect(() => {
     if (id) {
