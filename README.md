@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PDF RAG System
+
+A powerful Retrieval-Augmented Generation (RAG) system built with Python/Django and React that allows users to upload PDFs, chat with their documents, and convert web content into mind maps.
+
+![Project Overview](screenshot1.png)
+
+## Features
+
+- **PDF Upload & Processing**: Upload and analyze PDF documents
+- **Interactive Chat**: Engage with your documents through an intuitive chat interface
+- **Web Content to Mind Maps**: Convert web articles and content into visual mind maps
+- **Retrieval-Augmented Generation**: Enhance responses with document-specific knowledge
+- **Responsive Design**: Seamless experience across desktop and mobile devices
+
+![Chat Interface](screenshot2.png)
+
+## Technology Stack
+
+### Frontend
+- React.js
+- Redux for state management
+- Tailwind CSS for styling
+- Axios for API communication
+
+### Backend (Coming Soon)
+- Python/Django
+- LangChain for RAG pipeline
+- PostgreSQL for data storage
+- PDF processing libraries
+
+![PDF Processing](screenshot3.png)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
 
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/pdf-rag-system.git
+cd pdf-rag-system
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install frontend dependencies
+```bash
+cd frontend
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Start the development server
+```bash
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Backend setup (Coming soon)
+```
+Backend code will be added to this repository soon.
+```
 
-## Learn More
+![Mind Map Feature](screenshot4.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Upload Documents**: Click the upload button to add your PDFs
+2. **Chat with Documents**: Use the chat interface to ask questions about your documents
+3. **Generate Mind Maps**: Enter a URL to convert web content into visual mind maps
+4. **Export Results**: Save conversations and mind maps for future reference
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+pdf-rag-system/
+├── frontend/            # React frontend code
+│   ├── public/          # Static files
+│   ├── src/             # Source files
+│   │   ├── components/  # React components
+│   │   ├── pages/       # Page components
+│   │   ├── services/    # API services
+│   │   ├── store/       # Redux store
+│   │   └── utils/       # Utility functions
+│   ├── package.json     # Dependencies
+│   └── README.md        # Frontend specific instructions
+└── README.md            # Main project README
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![User Dashboard](screenshot5.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Coming Soon
+
+- Backend code with Django REST framework
+- Docker setup for easy deployment
+- Enhanced document processing capabilities
+- User authentication and document management
+- Additional export formats and sharing options
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [React](https://reactjs.org/)
+- [Django](https://www.djangoproject.com/)
+- [LangChain](https://langchain.readthedocs.io/)
+- [PDF.js](https://mozilla.github.io/pdf.js/)
