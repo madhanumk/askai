@@ -140,7 +140,7 @@ export default function ChatWithPdf() {
                 <a href="/my-pdf">Chat With PDF</a>
               </li>
               <li  className="breadcrumb-item text-sm text-dark " aria-current="page">
-              {pdfData.title} ({pdfData.description})
+              {pdfData ? `${pdfData.title} (${pdfData.description})` : 'Loading...'}
               </li>
             </ol>
           </nav>
