@@ -66,7 +66,19 @@ npm start
 Backend code will be added to this repository soon.
 ```
 
+## Modules and Screenshots
+
+### Web Content to Mind Map
+Convert web articles and content into structured mind maps.
 ![Mind Map Feature](https://github.com/madhanumk/askai/blob/main/Webpage%20to%20mindmap.png)
+
+### YouTube Video Summarization
+Generate summaries from YouTube videos (only available in local deployment).
+![YouTube Summarization](https://github.com/madhanumk/askai/blob/main/Youtube%20Video%20Summarizer.png)
+
+### Chat with PDF
+Engage with your documents through an interactive chat interface.
+![Chat with PDF](https://github.com/madhanumk/askai/blob/main/rag%20chat%20with%20pdf.png)
 
 ## Usage
 
@@ -75,8 +87,6 @@ Backend code will be added to this repository soon.
 3. **Generate Mind Maps**: Enter a URL to convert web content into visual mind maps
 4. **Summarize YouTube Videos**: Enter a YouTube URL to generate a video summary (Only available in local deployment)
 5. **Export Results**: Save conversations and mind maps for future reference
-
-![User Dashboard](https://github.com/madhanumk/askai/blob/main/Youtube%20Video%20Summarizer.png)
 
 ## Coming Soon
 
