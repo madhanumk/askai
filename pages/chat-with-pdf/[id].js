@@ -29,10 +29,17 @@ export default function ChatWithPdf() {
 
   useEffect(() => {
     if (id) {
-      fetchPdfData(id);
-      fetchOldMessages(id);
+      fetchPdfData(id).catch(err => {
+        console.error("Error fetching PDF data:", err);
+        setError("Failed to load PDF details. Please try again.");
+      });
+      fetchOldMessages(id).catch(err => {
+        console.error("Error fetching messages:", err);
+        setMessages([]);
+      });
     }
   }, [id]);
+  
 
    // Scroll to bottom whenever messages update
    useEffect(() => {
@@ -53,25 +60,15 @@ export default function ChatWithPdf() {
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL;
       const token = localStorage.getItem("access_token");
-
-      if (!token) {
-        setError("User not authenticated. Redirecting to login...");
-        window.location.href = "/login";
-        return;
-      }
-
+  
       const response = await axios.get(`${apiUrl}/chat-with-pdf-api/${pdfId}/`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-
       setPdfData(response.data);
-      console.log("PDF Data:", response.data);
-      
-      // Set the PDF URL
-      const fullPdfUrl = `${apiUrl}${response.data.file}`;
-      console.log(`${apiUrl}${response.data.file}`);
-      setPdfUrl(fullPdfUrl);
-      scrollToBottom();
+      // Set the PDF URL if it's in the response data
+      if (response.data && response.data.pdf_file) {
+        setPdfUrl(response.data.pdf_file);
+      }
     } catch (error) {
       console.error("Error fetching PDF data:", error);
       setError("Failed to load PDF details. Please try again.");
