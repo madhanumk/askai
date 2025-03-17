@@ -8,6 +8,70 @@ A Retrieval-Augmented Generation (RAG) system built with Python/Django and Next.
 
 > **Note**: We use freemium services so the server is sometimes slow. API token limits may be exceeded occasionally, but everything works fine in a local environment. The production version uses DeepSeek model API via NVIDIA for inference.
 
+# AskAI App
+
+This is a simple Next.js app named AskAI that is dockerized for easy development and deployment.
+
+## Requirements
+
+- Docker installed on your system.
+
+## Setup
+
+Follow these steps to run the app using Docker:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/madhanumk/askai.git
+    cd askai-app
+    ```
+
+2. **Build the Docker image:**
+
+    Run the following command to build the Docker image:
+
+    ```bash
+    docker build -t askai-app .
+    ```
+
+3. **Run the Docker container:**
+
+    After the image is built, run the Docker container with this command:
+
+    ```bash
+    docker run -p 3000:3000 askai-app
+    ```
+
+    This will start the app inside the container and bind port `3000` inside the container to port `3000` on your local machine.
+
+4. **Access the app:**
+
+    Open your browser and go to `http://localhost:3000` to see the app running.
+
+## Development
+
+If you want to work on the app locally without Docker, you can install dependencies and run the development server using these commands:
+
+1. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+2. **Run the app:**
+
+    ```bash
+    npm run dev
+    ```
+
+This will start the Next.js development server on `http://localhost:3000`.
+
+## Notes
+
+- The app is dockerized using Node.js version `22.4.0` with the Alpine Linux base image for a smaller footprint.
+
+
 ## Features
 
 - **PDF Upload & Processing**: Upload and analyze PDF documents
